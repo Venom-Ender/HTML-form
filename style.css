@@ -1,0 +1,109 @@
+/*decorating body section*/
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:70vh;
+    margin:0;
+    padding:0;
+    background:url('sigma.jpg')no-repeat;
+    font-family:'times new roman', sans-serif;
+}
+/*decorating container section*/
+.container{
+    background:transparent;
+    text-align:center;
+    color:#fff;
+    height:359px;
+    position:relative;
+    width:170%;
+    border:1px solid #fff;
+    perspective:3200px;
+    backdrop-filter:blur(10px);
+    border-radius:40px;
+/*putting remember section on the left side*/
+}
+.remember{
+    display:flex;
+    padding-left:20px;
+    padding-top:10px;
+/*putting hyperreference stuff on the edges of section*/
+}
+.ready{
+   display:flex;
+   justify-content:space-between;
+   padding-left:20px;
+   padding-right:20px;
+   padding-top:20px;
+/*doing the same with forgot section*/
+}
+.forgot{
+    display: flex;
+    justify-content:space-between;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+/*decorating button*/
+}
+button{
+    width:30%;
+    cursor:pointer;
+    background:transparent;
+    border:2px solid #fff;
+    border-radius:10px;
+    color:white;
+    transition:0.1s;
+    margin-top:50px;
+/* changing background color when you are hovering on button */
+}
+button:hover{
+background-color:rgba(255, 255, 255, 0.101);
+}
+/*changing the input look*/
+input{
+    margin-bottom:15px;
+    border-radius:40px;
+    border:none;
+    width:90%;
+    background-color:transparent;
+    border:2px solid #fff;
+    outline:none;
+    color:white;
+}
+/* changing the background color of input when you are clicking on it*/
+input:active{
+    background-color:rgba(255, 255, 255, 0.101);
+}
+/* changing the color of the text when you are in the input section*/
+input:focus{
+    color: rgb(238, 229, 229);
+}
+/*hyperreference look*/
+a{
+    text-decoration:none;
+    display:inline-block;
+    color:#fff;
+    font-size:16px;
+    transition: transform 0.1s ease-in-out;
+}
+/* hyperreference when you are hovering on it*/
+a:hover{
+    text-decoration:underline;
+    color:rgb(86, 11, 103);
+    transform:scale(1.1);
+}
+/*checkbox attributes*/
+#checkbox{
+    accent-color:gray;
+    cursor:pointer;
+    transition:all 0.3 ease;
+}
+/*attributes for placeholders*/
+input::placeholder{
+    text-align:center;
+    color:white;
+}
+
+
+
+
